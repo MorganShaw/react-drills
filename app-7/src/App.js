@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import List from "./components/List";
 import NewTask from "./components/NewTask";
 
-class App extends Component() {
-  constructor(){
-    super();
+class App extends Component {
+  constructor(props) {
+    super(props);
 
     this.state = {
       list: []
@@ -15,7 +14,9 @@ class App extends Component() {
   }
 
   handleAddTask(task) {
-    this.setState({ list: [...this.state.list, task] });
+    this.setState({ 
+      list: [...this.state.list, task] 
+    });
   }
 
   render() {

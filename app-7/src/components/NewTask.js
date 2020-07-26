@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 
 class NewTask extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             input: ""
@@ -32,10 +32,5 @@ class NewTask extends Component {
         );
     }
 }
-
-
-
-
-
 
 export default NewTask;
